@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="main">
+      <form class="login">
+        <div class="container username-cont">
+          <label for="">Username</label>
+          <input type="text" placeholder="Username..." id="username-login" />
+        </div>
+        <div class="container passsword-cont">
+          <label for="">Password</label>
+          <input type="text" placeholder="Password..." id="password-login" />
+        </div>
+        <div class="btns">
+          <button class="btn signin" type="button">Sign up?</button>
+          <button class="btn log-in" type="submit">Log in</button>
+        </div>
+      </form>
+      <form class="signup hidden">
+        <div class="container username-cont">
+          <label for="">Username</label>
+          <input type="text" placeholder="Username..." id="username-signup" />
+        </div>
+        <div class="container email-cont">
+          <label for="">Emailadress</label>
+          <input
+            type="email"
+            placeholder="Emailadress..."
+            id="email-signup"
+            pattern=".+@example\.com"
+            size="35"
+            required
+          />
+        </div>
+        <div class="container password-cont">
+          <label for="">Password</label>
+          <input
+            type="text"
+            placeholder="Password..."
+            id="password-signup"
+            minlength="8"
+            required
+          />
+        </div>
+        <div class="btns">
+          <button class="btn signin" type="button">Back</button>
+          <button class="btn sign-up" type="submit">Sign up</button>
+        </div>
+      </form>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
